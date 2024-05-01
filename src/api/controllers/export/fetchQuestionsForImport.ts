@@ -238,13 +238,13 @@ export const ReserveQuestionAsPractice = async (req: AuthenticatedRequest, res: 
 export const fetchReserveQuestionsHandler = async (req: AuthenticatedRequest, res: Response) => {
     try {
         const reservedQuestions = await prisma.exportedQuestion.findMany({
-            where: { 
+            where: {
                 userId: req?.user?.id,
                 status:ExportedQuestionStatus.NORMAL
              }
         });
         console.log("reservedQuestions", reservedQuestions);
-        return ApiResponse(true, "Questions etched successfully", reservedQuestions, 200, res);
+        return ApiResponse(true, "Questions fetched successfully", reservedQuestions, 200, res);
     } catch (error) {
         console.log("reserveQuestions::error", JSON?.stringify(error?.message));
         return ApiResponse(false, "Something Went Wrong", error, 500, res);

@@ -1,0 +1,11 @@
+
+  // "scripts": {
+  //   "start:dev": "nodemon -r tsconfig-paths/register src/app.ts",
+  //   "start": "nodemon -r tsconfig-paths/register src/app.ts prisma generate --schema=./src/prisma/schema.prisma",
+  //   "start:prod": "node src/app.js",
+  //   "prisma:generate": "prisma generate --schema=./src/prisma/schema.prisma",
+  //   "prisma:reset": "prisma migrate reset --force --schema=./src/prisma/schema.prisma",
+  //   "prisma:devmigrate": "prisma migrate dev --schema=./src/prisma/schema.prisma",
+  //   "build": "tsc",
+  //   "test": "echo \"Error: no test specified\" && exit 1"
+  // },
